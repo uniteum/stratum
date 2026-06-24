@@ -10,7 +10,7 @@ Strata is a substrate primitive built around a single object: the **stratum**. A
 
 **Tip.** Anyone can send ETH directly to a stratum. It simply adds to that stratum's balance — and, like everything a stratum holds, will settle downward toward its foundations on the next redemption.
 
-**Redeem.** `redeem` is permissionless: anyone may call it on any stratum. It takes the stratum's current balance and divides it among the stratum's owner and its substrata. The owner's share leaves the system; each substratum's share is credited to that substratum, where it waits to be settled further down. No one needs incentive to call it — every stratum, and all of its descendants, are motivated by the value waiting below them.
+**Redeem.** `redeem` is permissionless: anyone may call it on any stratum. It takes the stratum's current balance and divides it among the stratum's owner and its substrata. The owner's share leaves the system; each substratum's share is credited to that substratum, where it waits to be settled further down. No one needs incentive to call it — every stratum, and all the strata beneath it, are motivated to draw down the value waiting above them, each taking its share as it passes.
 
 Over many redemptions, value migrates along the references toward the foundations, each owner taking a share as it passes through. An original, having no substrata, pays its whole balance to its owner — originality is rewarded in full; derivative work pays tribute to its sources.
 
